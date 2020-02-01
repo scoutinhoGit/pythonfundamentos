@@ -56,15 +56,27 @@
 # #        ^ delete key antiga
 
 # print(RE2)
-cliente = input ('informe o cliente ')
-dados_clientes={'cliente': 
-                   {'cl001':{'nome':'Raphael',
-                             'idade':20,
-                             'telefone':'30314514'},
-                    'cl002':{'nome':'Malu',
-                             'idade':35,
-                             'telefone':'75670134'}}}
+# cliente = input ('informe o cliente ')
+# dados_clientes={'cliente': 
+#                    {'cl001':{'nome':'Raphael',
+#                              'idade':20,
+#                              'telefone':'30314514'},
+#                     'cl002':{'nome':'Malu',
+#                              'idade':35,
+#                              'telefone':'75670134'}}}
 
-print(dados_clientes['cliente'][cliente].values())                           
+#print(dados_clientes['cliente'][cliente].values())                           
 
-                      
+# exemplo de idade
+# idade = int(input('qual a idade :    '))   
+
+# if idade >= 18:
+#     habilitacao = int(input('Possui carteira:\n1 - para sim \n2 - para nao\n'))
+#     if habilitacao ==1:
+#         print('voce pode dirigir')
+#     else:
+#         print("maior, mas sem habilitacao")
+# else:
+#     print('voce nao pode dirigir')    
+
+++

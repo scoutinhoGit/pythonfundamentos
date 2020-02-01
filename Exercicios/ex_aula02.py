@@ -18,8 +18,12 @@ dados={'estados':{
 # imprima as informacoes
 # a) Nome dos Estados
 for i in dados['estados'].keys():
-    print(i)
-# b) Nome dos estados e sua populacao
+    print(f"Nome do estado [{i}] : {dados['estados'][i]['nome']}")
+ 
+ # b) Nome dos estados e sua populacao
+for i in dados['estados'].keys():
+    print(f"Nome do estado [{i}] : {dados['estados'][i]['nome']} tem populacao de {dados['estados'][i]['populacao']}")
 # c) Nome dos estados e quantidades municipios
-
+for i in dados['estados'].keys():
+    print(f"Nome do estado [{i}] : {dados['estados'][i]['nome']} tem {dados['estados'][i]['municipios']} municipios")
 #print(dados['estados']['sp']['nome'])
