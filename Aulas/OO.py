@@ -26,7 +26,6 @@ class Servidor():
     
     def changeServico(self,servico):
         self.servico = servico
-
  
 hall9000 = Servidor('psicotico',200,'2000',16) 
 print(hall9000.servico,hall9000.memoria,hall9000.disco)
