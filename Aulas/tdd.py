@@ -17,7 +17,7 @@ class Testes(TestCase):
         self.assertEqual(validar_par(1),False)
     def teste_string(self):
         self.assertEqual(validar_par('102'),True)
-    def teste_string_null(self):
+    def teste_string(self):
        self.assertEqual(validar_par('string'),None)
 
 
