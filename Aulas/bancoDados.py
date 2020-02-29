@@ -47,4 +47,22 @@ def buscar_dados():
             print(20*'=')
             print('Nome : {} \n Carga Horaria {}'.format(c['nome'],c['Carga Horaria']))    
 
-buscar_dados()                 
+#buscar_dados()    
+# 
+
+def adicionar_sub():
+    db.fila.update({"_id":3},{"$addToSet":{'instrutores':{'nome':'Mariana',
+                                          'email':'xpto@gmail'}}})
+
+#adicionar_sub()
+
+def update_sub():
+    db.fila.update({"_id":2, "instrutores.nome":"Mariana"},
+                          {"$set":{"instrutores.$.nome":"Confucio Tecladus"}})
+
+def update_email_sub():
+    db.fila.update({"_id":2, "instrutores.email":"xpto@gmail"},
+                          {"$set":{"instrutores.$.email":"Confucio@xpto"}})                          
+
+#update_sub()
+update_email_sub()
