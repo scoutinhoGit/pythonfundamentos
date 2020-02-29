@@ -1,4 +1,4 @@
-# - * - coding utf-8 - * -
+p# - * - coding utf-8 - * -
 # print("Hello Word")
 
 # texto = "eu nao to legal, sei la, mil Coisas"

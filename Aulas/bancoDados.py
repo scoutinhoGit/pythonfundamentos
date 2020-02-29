@@ -34,8 +34,17 @@ db = client['dexterops']
 
 def inserir_dados():
     try:
-        db.fila.insert({"_id":1,"empresa":"4linux","cursos":[{"nome":"Python"},{"nome":"Linux"}]})
+        db.fila.insert({"_id":3,"empresa":"4linux","cursos":[{"nome":"Python II","Carga Horaria":10},{"nome":"Linux III","Carga Horaria":5}]})
     except Exception as e:
         print(f"Erro: {e}")
 
-inserir_dados()        
+#inserir_dados()    
+
+def buscar_dados():
+    for r in db.fila.find():
+        print('Empresa {}'.format(r['empresa'])) 
+        for c in r['cursos']:
+            print(20*'=')
+            print('Nome : {} \n Carga Horaria {}'.format(c['nome'],c['Carga Horaria']))    
+
+buscar_dados()                 
